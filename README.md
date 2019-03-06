@@ -1,7 +1,7 @@
-#Weather Chatbot
-######A simple chatbot which displays user's current weather conditions graphically based on the data measured from DHT-11 Sensors
+# Weather Chatbot
+###### A simple chatbot which displays user's current weather conditions graphically based on the data measured from DHT-11 Sensors
 
-###Temperature and Humidity Measurement
+### Temperature and Humidity Measurement
 For measuring the temperature and humidity of the surrounding we are using the following components:-
 
 - NodeMCU
@@ -12,9 +12,9 @@ NodeMCU is a module having a wifi module ESP8266 and associated circuit with it 
 
 This setup is connected to a PC/laptop in which the code for measuring both the temperature of humidity using the DHT library is present. The other libraries used are WifiClient, ESP8266 and ThingSpeak. The details of the wifi through which data will be uploaded is entered in the code and the Channel Key and the API Key available through the ThingSpeak’s website is entered in the code. The code is uploaded on NodeMCU and the sensors start generating and uploading the data to the cloud.
 
-###Cloud Storage - Thingspeak
+### Cloud Storage - Thingspeak
 ThingSpeak is a free web service that lets you collect and store sensor data in the cloud and develop Internet of Things applications. We are using Thingspeak as temporary cloud storage. On the ThingSpeak channel, two fields are created one for temperature and the other for humidity. All the live data is stored on Thingspeak channel and from there it is fetched using Thingspeak API and displayed to the user accordingly.
 
-Interface - Website
+### Interface - Website
 For interface, we are using a web app built with the use of HTML, CSS and JavaScript. Initial conversation with the user is hardcoded into the interface. Data from Thingspeak is fetched with the help of the REST API of Thingspeak. The data is received in JSON format which is converted accordingly to the use. Once the user asks for weather conditions he is presented with a graphical representation of the current weather conditions as measured by the sensor and uploaded on Thingspeak. 
 
