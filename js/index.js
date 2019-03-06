@@ -14,7 +14,7 @@ function bot() {
     }
 
     else if (questionNum == 1) {
-    if(input.indexOf("weather") !== -1 || input.indexOf("Weather") !== -1 )
+    if(input.indexOf("temperature") !== -1 || input.indexOf("humidity") !== -1 )
     {
       output.innerHTML = '<h1>Yahh Sure!!!!!!</h1>';
       window.open('index2.html');
