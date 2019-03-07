@@ -47,7 +47,6 @@
         c.celcius = Math.round(r.feeds[r.channel.last_entry_id-1].field1);
         c.fahrenheit = Math.round((c.celcius * 9 / 5)+32);
         c.coverage = r.feeds[r.channel.last_entry_id-1].field2;
-        console.log(c);
         c.sunrise = json.sys.sunrise;
         c.sunset = json.sys.sunset;
 
